@@ -101,6 +101,9 @@ jQuery(document).ready(function ($) {
   $('#contact-form').on('submit', function (event) {
     event.preventDefault(); // prevent reload
 
+    $('.sent-message').hide();
+    $('.error-message').hide();
+
     var formData = new FormData(this);
     formData.append('service_id', 'outlook');
     formData.append('template_id', 'contact_form_01');
@@ -113,9 +116,11 @@ jQuery(document).ready(function ($) {
       processData: false // no need to parse formData to string
     }).done(function () {
       $('.loading').hide();
-      alert('Your mail is sent!');
+      $('.sent-message').show();
+      // alert('Your mail is sent!');
     }).fail(function (error) {
       $('.loading').hide();
+      $('.error-message').show();
       alert('Oops... ' + JSON.stringify(error));
     });
   });
