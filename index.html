@@ -398,7 +398,7 @@
             <p>
               <sm>CONTACT FORM</sm>
             </p>
-            <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
+            <form id="contact-form" class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
 
               <div class="form-group">
                 <label for="contact-name">Your Name</label>
@@ -447,9 +447,6 @@
 
   <div id="copyrights">
     <div class="container">
-      <p>
-        &copy; Copyrights <strong>Kelvin</strong>. All Rights Reserved
-      </p>
       <div class="credits">
         <!--
           You are NOT allowed to delete the credit link to TemplateMag with free version.
@@ -471,6 +468,14 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+
+  <!-- EmailJs Init -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_iOwrkll3cdRPJ6HBO4Vwh");
+    })();
+  </script>
 
 </body>
 

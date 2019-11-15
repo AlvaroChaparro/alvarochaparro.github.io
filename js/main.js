@@ -1,7 +1,7 @@
-jQuery(document).ready(function( $ ) {
+jQuery(document).ready(function ($) {
 
   // Smooth scroll for the menu and links with .scrollto classes
-  $('.smothscroll').on('click', function(e) {
+  $('.smothscroll').on('click', function (e) {
     e.preventDefault();
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -20,13 +20,13 @@ jQuery(document).ready(function( $ ) {
 
   // JavaScript Chart
   var doughnutData = [{
-      value: 70,
-      color: "#1abc9c"
-    },
-    {
-      value: 30,
-      color: "#ecf0f1"
-    }
+    value: 70,
+    color: "#1abc9c"
+  },
+  {
+    value: 30,
+    color: "#ecf0f1"
+  }
   ];
   var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
 
@@ -89,4 +89,35 @@ jQuery(document).ready(function( $ ) {
   }
   ];
   var myDoughnut = new Chart(document.getElementById("illustrator").getContext("2d")).Doughnut(doughnutData);
+
+  // var templateParams = {
+  //   name: $("contact-name").value,
+  //   email: $("contact-email").value,
+  //   subject: $("contact-subject").value,
+  //   message: $("contact-message").value
+  // };
+  // emailjs.send("outlook", "contact_fom_01", templateParams)
+
+  $('#contact-form').on('submit', function (event) {
+    event.preventDefault(); // prevent reload
+
+    var formData = new FormData(this);
+    formData.append('service_id', 'outlook');
+    formData.append('template_id', 'contact_form_01');
+    formData.append('user_id', 'user_iOwrkll3cdRPJ6HBO4Vwh');
+
+    $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
+      type: 'POST',
+      data: formData,
+      contentType: false, // auto-detection
+      processData: false // no need to parse formData to string
+    }).done(function () {
+      $('.loading').hide();
+      alert('Your mail is sent!');
+    }).fail(function (error) {
+      $('.loading').hide();
+      alert('Oops... ' + JSON.stringify(error));
+    });
+  });
 });
+
