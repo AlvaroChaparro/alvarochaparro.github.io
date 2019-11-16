@@ -167,7 +167,7 @@ SECTION WRAPS
 /* Header Wrap */
 
 #headerwrap {
-  background             : url(../img/cilindro3.jpg) no-repeat center top;
+  background             : url(../img/cilindro.jpg) no-repeat center top;
   margin-top             : 63.2px;
   padding-top            : 140px;
   text-align             : center;
@@ -246,6 +246,10 @@ p {
   padding-top   : 60px;
   padding-bottom: 60px;
   color         : white;
+}
+
+#skillswrap h1{
+  color: white;
 }
 
 #skillswrap h5{
