@@ -248,9 +248,14 @@ p {
   color         : white;
 }
 
-#skillswrap h5,
-p {
+#skillswrap h5{
   color: white;
+}
+
+#skillswrap p {
+  color: white;
+  font-size: larger;
+  font-weight: bold;
 }
 
 #footwrap {
