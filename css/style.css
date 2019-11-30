@@ -36,10 +36,10 @@ p {
 }
 
 .centered {
-  text-align: center;
+  text-align    : center;
   /* margin-left: auto;
-  margin-right: auto;
-  float: none; */
+  margin-right  : auto;
+  float         : none; */
 }
 
 /* Links */
@@ -167,38 +167,48 @@ SECTION WRAPS
 /* Header Wrap */
 
 #headerwrap {
-  background             : url(../img/cilindro.jpg) no-repeat center top;
-  margin-top             : 63.2px;
-  padding-top            : 140px;
-  text-align             : center;
-  background-attachment  : relative;
-  background-position    : center center;
+  background                : url(../img/cilindro.jpg) no-repeat center top;
+  margin-top                : 63.2px;
+  /* padding-top               : 140px; */
+  /* padding-top               : 20vh; */
+  text-align                : center;
+  background-attachment     : relative;
+  background-position       : center center;
   /* min-height             : 550px; */
-  min-height             : 35vw;
+  min-height                : 35vw;
   /* height                 : 100%; */
-  width                  : 100%;
-  -webkit-background-size: 100%;
-  -moz-background-size   : 100%;
-  -o-background-size     : 100%;
-  background-size        : 100%;
-  -webkit-background-size: cover;
-  -moz-background-size   : cover;
-  -o-background-size     : cover;
-  background-size        : cover;
+  width                     : 100%;
+  -webkit-background-size   : 100%;
+  -moz-background-size      : 100%;
+  -o-background-size        : 100%;
+  background-size           : 100%;
+  -webkit-background-size   : cover;
+  -moz-background-size      : cover;
+  -o-background-size        : cover;
+  background-size           : cover;
 }
 
 #headerwrap h1 {
-  font-size: 80px;
-  color    : white;
+  color         : white;
+  /* font-size     : 4.250em; */
+  font-size     : 12.250vmin;
+  font-weight   : 300;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  font-weight   : 400;
+  font-family: "Lato";
 }
 
 #headerwrap h3 {
-  font-size: 20px;
-  font-weight: 600;
-  color    : white;
+  /* font-size  : 2.90em; */
+  font-size  : 6.90vmin;
+  font-weight: 350;
+  color      : white;
+  text-transform: uppercase;
+  font-family: "Lato";
 }
 
-/* Intnro Wrap */
+/* Intro Wrap */
 
 #intro {
   /* background : #2c3e50; */
@@ -217,15 +227,15 @@ SECTION WRAPS
 }
 
 .line {
-  display: block;
-  width: 290px;
-  padding: 0!important;
-  height: 3px;  
-  background: #ccc;
-  margin-bottom: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  float: none;
+  display      : block;
+  width        : 290px;
+  padding      : 0 !important;
+  height       : 3px;
+  background   : white;
+  margin-bottom: 75px;
+  margin-left  : auto;
+  margin-right : auto;
+  float        : none;
 }
 
 #intro h5,
@@ -235,10 +245,50 @@ p {
 }
 
 #intro i {
-  color         : white;
+  color         : rgba(255, 255, 255, 0.9);
   font-size     : 20px;
   padding-right : 8px;
   vertical-align: middle;
+}
+
+#intro>div>div.row>div.col-lg-2.centered>p>a {
+  background: #44bbaa;
+  border    : 0;
+  padding   : 10px 10px;
+  color     : #fff;
+  transition: 0.4s;
+  cursor    : pointer;
+}
+
+#intro>div>div.row>div.col-lg-2.centered>p>a:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color     : #44bbaa;
+}
+
+/* Resume */
+
+#resume h1 {
+  color         : #333;
+  font-size     : 2.25em;
+  font-weight   : 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+#resume>div>div.col-12.centered>div {
+  display      : block;
+  width        : 290px;
+  padding      : 0 !important;
+  height       : 3px;
+  background   : #444;
+  margin-bottom: 75px;
+  margin-left  : auto;
+  margin-right : auto;
+  float        : none;
+}
+
+body>div.container.desc>div>div.col-lg-2.col-lg-offset-1>h5 {
+  margin-bottom: 20px;
 }
 
 #skillswrap {
@@ -248,18 +298,44 @@ p {
   color         : white;
 }
 
-#skillswrap h1{
-  color: white;
+#skillswrap h1 {
+  color         : white;
+  font-size     : 2.25em;
+  font-weight   : 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
-#skillswrap h5{
+#skillswrap h5 {
   color: white;
 }
 
 #skillswrap p {
-  color: white;
-  font-size: larger;
+  color      : white;
+  font-size  : larger;
   font-weight: bold;
+}
+
+/* Work (Portfolio) */
+
+#work>div>div.col-12.centered>div {
+  display      : block;
+  width        : 290px;
+  padding      : 0 !important;
+  height       : 3px;
+  background   : #333;
+  margin-bottom: 75px;
+  margin-left  : auto;
+  margin-right : auto;
+  float        : none;
+}
+
+#work h1 {
+  color         : #333;
+  font-size     : 2.250em;
+  font-weight   : 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 #footwrap {
@@ -333,6 +409,10 @@ sm {
 }
 
 /* Contact Form */
+
+#footwrap h4 {
+  color: white;
+}
 
 .contact-form label {
   color: #999;
