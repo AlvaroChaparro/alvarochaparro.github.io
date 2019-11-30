@@ -99,7 +99,7 @@ jQuery(document).ready(function ($) {
   // });
 
   $('#contact-form').on('submit', function (event) {
-    setTimeout(500);
+    // setTimeout(500);
     if( $('.validate').is(':empty') ) {
       event.preventDefault(); // prevent reload
 
