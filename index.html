@@ -118,7 +118,11 @@
           <div class="col-lg-3 centered" style="padding-bottom: 20px;">
             <!-- <h5>Photo</h5> -->
             <!-- Original Resolution: 1627x2621 -->
-            <img class="img-responsive center-block" src="img/photo.jpg" alt="">
+            <picture>
+              <source srcset="img/photo.jpg" type="photo/jpg">
+              <img class="img-responsive center-block" src="img/photo.webp" alt="Personal Image">
+            </picture>
+            <!-- <img class="img-responsive center-block" src="img/photo.jpg" alt=""> -->
           </div>
           <div class="col-lg-6 col-lg-offset-1" style="padding-bottom: 20px;">
             <p style="margin-bottom: 15px;"><b>Hi, it's me </b><br>
@@ -461,7 +465,11 @@
 
         <div class="col-lg-6 col-lg-offset-1">
           <p><a href="https://github.com/AlvaroChaparro/Food-Delivery-Flutter">
-              <img class="img-responsive" src="img/food.png" alt="">
+              <!-- <img class="img-responsive" src="img/food.png" alt=""> -->
+              <picture>
+                <source srcset="img/food.jpg" type="food/jpg">
+                <img class="img-responsive center-block" src="img/food.webp" alt="Personal Image">
+              </picture>
             </a></p>
         </div>
         <div class="col-lg-5">
@@ -477,10 +485,6 @@
         <div class="col-lg-6 col-lg-offset-1">
           <p><a href="https://github.com/AlvaroChaparro/Shortest-path-algorithm-comparison">
               <!-- <img class="img-responsive" src="img/map.jpg" alt=""> -->
-              <!-- <picture>
-                <source srcset="img/map.webp" type="map/webp">
-                <img class="img-responsive" src="img/map.jpg" alt="Shortest Path Image">
-              </picture> -->
               <picture>
                 <source srcset="img/map.jpg" type="map/jpg">
                 <img class="img-responsive" src="img/map.webp" alt="Shortest Path Image">
