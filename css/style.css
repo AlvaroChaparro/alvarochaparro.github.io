@@ -242,7 +242,7 @@ SECTION WRAPS
   color         : white;
 }
 
-#intro h1 {
+#intro h2 {
   color         : white;
   font-size     : 2.250em;
   font-weight   : 300;
@@ -296,7 +296,7 @@ p {
 
 /* Resume */
 
-#resume h1 {
+#resume h1, h2 {
   color         : #333;
   font-size     : 2.25em;
   font-weight   : 300;
@@ -327,7 +327,7 @@ body>div.container.desc>div>div.col-lg-2.col-lg-offset-1>h5 {
   color         : white;
 }
 
-#skillswrap h1 {
+#skillswrap h2 {
   color         : white;
   font-size     : 2.25em;
   font-weight   : 300;
@@ -366,7 +366,7 @@ body>div.container.desc>div>div.col-lg-2.col-lg-offset-1>h5 {
   float        : none;
 }
 
-#work h1 {
+#work h2 {
   color         : #333;
   font-size     : 2.250em;
   font-weight   : 300;
