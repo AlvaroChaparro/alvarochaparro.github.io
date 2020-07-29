@@ -257,7 +257,7 @@ SECTION WRAPS
 
 .line {
   display      : block;
-  width        : 290px;
+  /* width        : 650px; */
   padding      : 0 !important;
   height       : 3px;
   background   : white;
@@ -306,7 +306,7 @@ p {
 
 #resume>div>div.col-12.centered>div {
   display      : block;
-  width        : 290px;
+  /* width        : 290px; */
   padding      : 0 !important;
   height       : 3px;
   background   : #444;
@@ -356,7 +356,7 @@ body>div.container.desc>div>div.col-lg-2.col-lg-offset-1>h5 {
 
 #work>div>div.col-12.centered>div {
   display      : block;
-  width        : 290px;
+  /* width        : 290px; */
   padding      : 0 !important;
   height       : 3px;
   background   : #333;
